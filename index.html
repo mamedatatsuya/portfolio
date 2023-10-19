@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ポートフォリオ</title>
+	<link rel="stylesheet" type="text/css" href="pgpf.css">
+	<script src="jquery-3.7.1.min.js"></script>
+	<script src="pgpf.js"></script>
+</head>
+<body>
+<div class="container">
+	<header>
+	<p id="title">まめだのポートフォリオ</p>
+	<nav>
+	<ul class="menubar">
+	<li><a class="current">トップ</a></li>
+	<li><a href="#profile">プロフィール</a></li>
+	<li><a href="#skill">スキル</a></li>
+	<li><a href="#portfolio">ポートフォリオ</a></li>
+	<li><a href="#contact">連絡先</a></li>
+	</ul>
+	</nav>
+</header>
+
+	<main>
+		<div class="paragraph" id="greet">
+			<h4>このサイトは</h4>
+			<p class="contents">
+				ここはまめだのプログラミングのポートフォリオサイトです。
+				<br>
+				今まで作ったプログラムやスキルを紹介しています。
+			</p>
+		</div>
+
+		<div class="paragraph" id="profile">
+			<h4>プロフィール</h4>
+			<p class="contents">千葉県出身の豆田達哉</p>
+		</div>
+
+		<div class="paragraph" id="skill">
+			<h4>スキル</h4>
+			<p class="contents">VBA Java HTML CSS JavaScript SQL</p>
+		</div>
+
+		<div class="paragraph" id="portfolio">
+			<h4>ポートフォリオ</h4>
+			<div>
+				<table>
+					<tr>
+						<td class="contents">
+							<a class="modal-open" data-id="1" href="">・テトリス</a>
+						</td>
+						<td class="contents">
+							<a class="modal-open" data-id="2" href="">・物件検索</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="contents">
+							<a  class="modal-open" data-id="1" href="">
+								<img src="./img/tetris.jpeg">
+							</a>
+						</td>
+						<td class="contents">
+							<a class="modal-open" data-id="2" href="">
+								<img src="./img/tetris.jpeg">
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="contents">
+							<a class="modal-open" data-id="3" href="">・ポートフォリオ</a>
+						</td>
+						<td class="contents">
+							<a class="modal-open" data-id="4" href="">・マクロ</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="contents">
+							<a class="modal-open" data-id="3" href="">
+								<img src="./img/portfolio.jpeg">
+							</a>
+						</td>
+						<td class="contents">
+							<a class="modal-open" data-id="4" href="">
+								<img src="./img/家計簿.png">
+							</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!-- モーダル本体 -->
+		<div class="modal" data-id="modal1">
+			<div class="modal-body">
+				<!-- 閉じるボタン -->
+				<div class="modal-close">×</div>
+				<!-- モーダル内のコンテンツ -->
+				<div class="modal-content">
+					<h3>テトリス</h3>
+					<p>html,Javascript,cssを学ぶためにサイトを参考にテトリスを作りました。</p>
+					<p class="contents"><a href="./テトリス/tetrissamp.html">テトリスへのリンク</a></p>
+					<p class="contents">
+						<a href="https://github.com/mamedatatsuya/tetris.git">ソースコードへのリンク</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal" data-id="modal2">
+			<div class="modal-body">
+				<!-- 閉じるボタン -->
+				<div class="modal-close">×</div>
+				<!-- モーダル内のコンテンツ -->
+				<div class="modal-content">
+					<h3>物件検索</h3>
+					<p>ポリテクセンター千葉にて総合制作で作りました。</p>
+					<p class="contents"><a>・サイトへのリンク</a></p>
+					<p class="contents"><a>・ソースコードへのリンク</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="modal" data-id="modal3">
+			<div class="modal-body">
+				<!-- 閉じるボタン -->
+				<div class="modal-close">×</div>
+				<!-- モーダル内のコンテンツ -->
+				<div class="modal-content">
+					<h3>ポートフォリオ</h3>
+					<p>このサイト。自分が作ったプログラを知ってもらうためにhtml,Javascript(JQuery),
+						cssを用いました。</p>
+					<p class="contents"><a class="close-up" href="#title">
+					・サイトへのリンク
+					</a></p>
+					<p class="contents"><a>・ソースコードへのリンク</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="modal" data-id="modal4">
+			<div class="modal-body">
+				<!-- 閉じるボタン -->
+				<div class="modal-close">×</div>
+				<!-- モーダル内のコンテンツ -->
+				<div class="modal-content">
+					<h3>マクロ</h3>
+					<p>プログラムについての説明</p>
+					<p class="contents"><a>・サイトへのリンク</a></p>
+					<p class="contents"><a>・ソースコードへのリンク</a></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="paragraph" id="contact">
+			<h4>連絡先</h4>
+			<div class="contents">
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLScWkug_CQvu0sBarbrqnGCMrPJqJ0F9xl6usPTZEundOnXsTQ/viewform?usp=sf_link">お問い合わせフォームへ</a>
+			</div>
+			
+		</div>
+	</main>
+
+<div>
+	<footer class="paragraph">
+		<p>&copy; 2023 Mameda_Tatsuya ALL RIGHTS RESERVED</p>
+	</footer>
+</div>
+
+</body>
+</html>
